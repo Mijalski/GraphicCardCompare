@@ -13,11 +13,11 @@ namespace Mijalski.EntityFrameworkCore.Business.GraphicCards
         }
 
         public string Name { get; set; }
-        public string Price { get; set; }
+        public decimal Price { get; set; }
         public Ram Ram { get; set; }
         public string InterfaceType { get; set; }
         public string ProcessorSpeed { get; set; }
-        public string Wattage { get; set; }
+        public double Wattage { get; set; }
         public Guid VendorId { get; set; }
         public virtual Vendor Vendor { get; set; } 
     }

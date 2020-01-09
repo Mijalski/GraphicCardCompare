@@ -16,10 +16,11 @@ namespace Mijalski.GraphicCardCompare
         
         protected override void OnStartup(StartupEventArgs e)
         {
-            var configurationRoot = new ConfigurationBuilder()
+            var builder = new ConfigurationBuilder()
                 .SetBasePath(Directory.GetParent(Environment.CurrentDirectory).Parent.Parent.FullName)
-                .AddJsonFile("appsettings.json")
-                .Build();
+                .AddJsonFile("appsettings.json");
+ 
+            Configuration = builder.Build();
 
             var serviceCollection = new ServiceCollection();
             ConfigureServices(serviceCollection);
@@ -33,13 +34,11 @@ namespace Mijalski.GraphicCardCompare
         private void ConfigureServices(IServiceCollection services)
         {
             services.AddTransient(typeof(MainWindow));
-            var x = Configuration.GetConnectionString("DefaultConnection");
-            var x2 = Configuration.GetSection("ConnectionStrings");
-            services.AddDbContext<DatabaseContext>(options =>
-                options.UseSqlServer(
+            services.AddDbContext<DatabaseContext>(
+                options => options.UseSqlServer(
                     Configuration.GetConnectionString("DefaultConnection")
-                )
-            );
+                    )
+                ); 
         }
     }
 }

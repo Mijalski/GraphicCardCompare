@@ -9,6 +9,7 @@ namespace Mijalski.EntityFrameworkCore.EntityTypeConfigurations
         public void Configure(EntityTypeBuilder<Ram> builder)
         {
             builder.ToTable("AppRams");
+            builder.HasKey(_ => _.GraphicCardId);
         }
     }
 }
