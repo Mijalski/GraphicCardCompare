@@ -1,0 +1,13 @@
+*.cs
+*.baml
+*.lref
+*.cache
+*.pdb
+*.resources
+*.exe
+*.dll
+*.json
+*.txt
+GraphicCardCompare/obj/GraphicCardCompare.csproj.nuget.g.targets
+GraphicCardCompare/obj/
+.vs/
