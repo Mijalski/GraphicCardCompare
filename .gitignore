@@ -1,3 +1,6 @@
 GraphicCardCompare/obj/GraphicCardCompare.csproj.nuget.g.targets
 GraphicCardCompare/obj/
 .vs/
+EntityFrameworkCore/bin/
+EntityFrameworkCore/obj/
+GraphicCardCompare/bin/
