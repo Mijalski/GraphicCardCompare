@@ -1,9 +1,11 @@
 ﻿using System.Collections.Generic;
 using System.Collections.ObjectModel;
 using System.ComponentModel;
+using System.Linq;
 using System.Runtime.CompilerServices;
 using System.Threading.Tasks;
 using System.Windows;
+using System.Windows.Controls;
 using ApplicationLogic.Business.GraphicCards;
 using ApplicationLogic.Business.Specs;
 using ApplicationLogic.Business.Vendors;
@@ -11,11 +13,12 @@ using ApplicationLogic.IGenerics.AppServices;
 using DomainLogic.Business.GraphicCards;
 using DomainLogic.Business.Specs;
 using DomainLogic.Business.Vendors;
+using Microsoft.EntityFrameworkCore.Internal;
 using Mijalski.GraphicCardCompare.Annotations;
 
 namespace Mijalski.GraphicCardCompare
 {
-    public partial class MainWindow : Window, INotifyPropertyChanged
+    public partial class MainWindow : Window
     {
         public List<GraphicCardDto> GraphicCardList { get; set; }
         public List<VendorDto> VendorList { get; set; }
@@ -33,12 +36,14 @@ namespace Mijalski.GraphicCardCompare
             VendorList = _vendorAppService.GetAll();
         }
 
-        public event PropertyChangedEventHandler PropertyChanged;
-
-        [NotifyPropertyChangedInvocator]
-        protected virtual void OnPropertyChanged([CallerMemberName] string propertyName = null)
+        private void GraphicCardList_EditEnding(object? sender, DataGridRowEditEndingEventArgs e)
         {
-            PropertyChanged?.Invoke(this, new PropertyChangedEventArgs(propertyName));
+            throw new System.NotImplementedException();
+        }
+
+        private void VendorList_EditEnding(object? sender, DataGridRowEditEndingEventArgs e)
+        {
+            if(VendorList.Any(x => x.Name == e.))
         }
     }
 }

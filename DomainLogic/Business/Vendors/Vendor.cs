@@ -13,7 +13,6 @@ namespace DomainLogic.Business.Vendors
             GraphicCards = new HashSet<GraphicCard>();
         }
 
-        public string Name { get; set; }
         public virtual HashSet<GraphicCard> GraphicCards { get; set; }
     }
 }

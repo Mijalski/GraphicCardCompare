@@ -4,3 +4,17 @@ GraphicCardCompare/obj/
 EntityFrameworkCore/bin/
 EntityFrameworkCore/obj/
 GraphicCardCompare/bin/
+ApplicationLogic/bin/Debug/netcoreapp3.1/EntityFrameworkCore.pdb
+ApplicationLogic/bin/Debug/netcoreapp3.1/EntityFrameworkCore.dll
+ApplicationLogic/bin/Debug/netcoreapp3.1/DomainLogic.pdb
+ApplicationLogic/bin/Debug/netcoreapp3.1/DomainLogic.dll
+ApplicationLogic/bin/Debug/netcoreapp3.1/ApplicationLogic.pdb
+ApplicationLogic/bin/Debug/netcoreapp3.1/ApplicationLogic.dll
+DomainLogic/obj/Debug/netcoreapp3.1/DomainLogic.csprojAssemblyReference.cache
+DomainLogic/bin/Debug/netcoreapp3.1/DomainLogic.pdb
+DomainLogic/bin/Debug/netcoreapp3.1/DomainLogic.dll
+ApplicationLogic/obj/Debug/netcoreapp3.1/ApplicationLogic.pdb
+DomainLogic/obj/Debug/netcoreapp3.1/DomainLogic.pdb
+DomainLogic/obj/Debug/netcoreapp3.1/DomainLogic.dll
+ApplicationLogic/obj/Debug/netcoreapp3.1/ApplicationLogic.dll
+ApplicationLogic/obj/Debug/netcoreapp3.1/ApplicationLogic.csprojAssemblyReference.cache

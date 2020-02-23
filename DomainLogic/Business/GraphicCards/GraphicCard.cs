@@ -12,7 +12,6 @@ namespace DomainLogic.Business.GraphicCards
             Id = Guid.NewGuid();
         }
 
-        public string Name { get; set; }
         public decimal Price { get; set; }
         public Ram Ram { get; set; }
         public string InterfaceType { get; set; }

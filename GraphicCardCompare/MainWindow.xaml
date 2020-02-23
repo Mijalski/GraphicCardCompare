@@ -10,11 +10,11 @@
         <TabControl>
             <TabItem Header="Graphic Cards">
                 <DataGrid x:Name="GraphicCardDataGrid" ItemsSource="{Binding Path=GraphicCardList, Mode=TwoWay, NotifyOnSourceUpdated=True, NotifyOnTargetUpdated=True}" AlternatingRowBackground="LightBlue" AlternationCount="2"
-                          Margin="10,36,10,0" IsReadOnly="False"/>
+                          Margin="10,36,10,0" IsReadOnly="False" RowEditEnding="GraphicCard_EditEnding"/>
             </TabItem>
             <TabItem Header="Vendors">
                 <DataGrid x:Name="VendorGrid" ItemsSource="{Binding Path=VendorList, Mode=OneWay, NotifyOnSourceUpdated=True, NotifyOnTargetUpdated=True}" AlternatingRowBackground="LightBlue" AlternationCount="2"
-                          Margin="10,36,10,0" IsReadOnly="False" CanUserDeleteRows="False"/>
+                          Margin="10,36,10,0" IsReadOnly="False" CanUserDeleteRows="False" RowEditEnding="Vendor_EditEnding"/>
             </TabItem>
         </TabControl>
     </Grid>
