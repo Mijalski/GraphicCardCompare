@@ -7,6 +7,10 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "GraphicCardCompare", "Graph
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "EntityFrameworkCore", "EntityFrameworkCore\EntityFrameworkCore.csproj", "{48D0F42D-95C1-49D2-94E3-B50D9D1A50D8}"
 EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DomainLogic", "DomainLogic\DomainLogic.csproj", "{EB400C22-7D0A-4FB0-9FAE-79F8C2BA3F37}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ApplicationLogic", "ApplicationLogic\ApplicationLogic.csproj", "{404DADD1-2AF5-4265-8845-DD13077DE9D3}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -21,6 +25,14 @@ Global
 		{48D0F42D-95C1-49D2-94E3-B50D9D1A50D8}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{48D0F42D-95C1-49D2-94E3-B50D9D1A50D8}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{48D0F42D-95C1-49D2-94E3-B50D9D1A50D8}.Release|Any CPU.Build.0 = Release|Any CPU
+		{EB400C22-7D0A-4FB0-9FAE-79F8C2BA3F37}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EB400C22-7D0A-4FB0-9FAE-79F8C2BA3F37}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EB400C22-7D0A-4FB0-9FAE-79F8C2BA3F37}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EB400C22-7D0A-4FB0-9FAE-79F8C2BA3F37}.Release|Any CPU.Build.0 = Release|Any CPU
+		{404DADD1-2AF5-4265-8845-DD13077DE9D3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{404DADD1-2AF5-4265-8845-DD13077DE9D3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{404DADD1-2AF5-4265-8845-DD13077DE9D3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{404DADD1-2AF5-4265-8845-DD13077DE9D3}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

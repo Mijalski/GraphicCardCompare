@@ -1,8 +1,8 @@
 ﻿using System;
+using DomainLogic.Business.GraphicCards;
+using DomainLogic.Business.Specs;
+using DomainLogic.Business.Vendors;
 using Microsoft.EntityFrameworkCore;
-using Mijalski.EntityFrameworkCore.Business.GraphicCards;
-using Mijalski.EntityFrameworkCore.Business.Specs;
-using Mijalski.EntityFrameworkCore.Business.Vendors;
 using Mijalski.EntityFrameworkCore.EntityTypeConfigurations;
 
 namespace Mijalski.EntityFrameworkCore
@@ -29,6 +29,10 @@ namespace Mijalski.EntityFrameworkCore
             var nvidiaVendor = new Vendor
             {
                 Name = "Nvidia"
+            };
+            var amdVendor = new Vendor
+            {
+                Name = "AMD"
             };
             var gtx970 = new GraphicCard
             {
@@ -64,7 +68,7 @@ namespace Mijalski.EntityFrameworkCore
             #endregion
 
             modelBuilder.Entity<Vendor>().HasData(
-                nvidiaVendor
+                nvidiaVendor,amdVendor
             );
             modelBuilder.Entity<GraphicCard>().HasData(
                 gtx970,rtx2070

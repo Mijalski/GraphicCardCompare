@@ -1,6 +1,6 @@
-﻿using Microsoft.EntityFrameworkCore;
+﻿using DomainLogic.Business.Vendors;
+using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Metadata.Builders;
-using Mijalski.EntityFrameworkCore.Business.Vendors;
 
 namespace Mijalski.EntityFrameworkCore.EntityTypeConfigurations
 {

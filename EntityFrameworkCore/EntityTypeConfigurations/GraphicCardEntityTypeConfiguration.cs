@@ -1,7 +1,7 @@
-﻿using Microsoft.EntityFrameworkCore;
+﻿using DomainLogic.Business.GraphicCards;
+using DomainLogic.Business.Specs;
+using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Metadata.Builders;
-using Mijalski.EntityFrameworkCore.Business.GraphicCards;
-using Mijalski.EntityFrameworkCore.Business.Specs;
 
 namespace Mijalski.EntityFrameworkCore.EntityTypeConfigurations
 {

@@ -1,0 +1,13 @@
+C:\Users\mijal\source\repos\Mijalski.GraphicCardCompare\ApplicationLogic\obj\Debug\netcoreapp3.1\ApplicationLogic.csprojAssemblyReference.cache
+C:\Users\mijal\source\repos\Mijalski.GraphicCardCompare\ApplicationLogic\obj\Debug\netcoreapp3.1\ApplicationLogic.AssemblyInfoInputs.cache
+C:\Users\mijal\source\repos\Mijalski.GraphicCardCompare\ApplicationLogic\obj\Debug\netcoreapp3.1\ApplicationLogic.AssemblyInfo.cs
+C:\Users\mijal\source\repos\Mijalski.GraphicCardCompare\ApplicationLogic\bin\Debug\netcoreapp3.1\ApplicationLogic.deps.json
+C:\Users\mijal\source\repos\Mijalski.GraphicCardCompare\ApplicationLogic\bin\Debug\netcoreapp3.1\ApplicationLogic.dll
+C:\Users\mijal\source\repos\Mijalski.GraphicCardCompare\ApplicationLogic\bin\Debug\netcoreapp3.1\ApplicationLogic.pdb
+C:\Users\mijal\source\repos\Mijalski.GraphicCardCompare\ApplicationLogic\bin\Debug\netcoreapp3.1\DomainLogic.dll
+C:\Users\mijal\source\repos\Mijalski.GraphicCardCompare\ApplicationLogic\bin\Debug\netcoreapp3.1\EntityFrameworkCore.dll
+C:\Users\mijal\source\repos\Mijalski.GraphicCardCompare\ApplicationLogic\bin\Debug\netcoreapp3.1\DomainLogic.pdb
+C:\Users\mijal\source\repos\Mijalski.GraphicCardCompare\ApplicationLogic\bin\Debug\netcoreapp3.1\EntityFrameworkCore.pdb
+C:\Users\mijal\source\repos\Mijalski.GraphicCardCompare\ApplicationLogic\obj\Debug\netcoreapp3.1\ApplicationLogic.csproj.CopyComplete
+C:\Users\mijal\source\repos\Mijalski.GraphicCardCompare\ApplicationLogic\obj\Debug\netcoreapp3.1\ApplicationLogic.dll
+C:\Users\mijal\source\repos\Mijalski.GraphicCardCompare\ApplicationLogic\obj\Debug\netcoreapp3.1\ApplicationLogic.pdb

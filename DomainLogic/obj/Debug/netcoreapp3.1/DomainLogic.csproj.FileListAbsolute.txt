@@ -1,0 +1,8 @@
+C:\Users\mijal\source\repos\Mijalski.GraphicCardCompare\DomainLogic\bin\Debug\netcoreapp3.1\DomainLogic.deps.json
+C:\Users\mijal\source\repos\Mijalski.GraphicCardCompare\DomainLogic\bin\Debug\netcoreapp3.1\DomainLogic.dll
+C:\Users\mijal\source\repos\Mijalski.GraphicCardCompare\DomainLogic\bin\Debug\netcoreapp3.1\DomainLogic.pdb
+C:\Users\mijal\source\repos\Mijalski.GraphicCardCompare\DomainLogic\obj\Debug\netcoreapp3.1\DomainLogic.csprojAssemblyReference.cache
+C:\Users\mijal\source\repos\Mijalski.GraphicCardCompare\DomainLogic\obj\Debug\netcoreapp3.1\DomainLogic.AssemblyInfoInputs.cache
+C:\Users\mijal\source\repos\Mijalski.GraphicCardCompare\DomainLogic\obj\Debug\netcoreapp3.1\DomainLogic.AssemblyInfo.cs
+C:\Users\mijal\source\repos\Mijalski.GraphicCardCompare\DomainLogic\obj\Debug\netcoreapp3.1\DomainLogic.dll
+C:\Users\mijal\source\repos\Mijalski.GraphicCardCompare\DomainLogic\obj\Debug\netcoreapp3.1\DomainLogic.pdb
