@@ -8,12 +8,12 @@ using Mijalski.EntityFrameworkCore.IGenerics;
 
 namespace ApplicationLogic.Generics.CommandServices
 {
-    public class CreateCommandService<TEntity, TEntityDto>  : ICreateCommandService<TEntity, TEntityDto>
+    public class CreateCommandService<TEntity, TEntityDto> : ICreateCommandService<TEntity, TEntityDto>
         where TEntity : class, IEntity
         where TEntityDto : class, IEntityDto
     {
-        private readonly IRepository<TEntity> _repository;
-        private readonly IMapper _mapper;
+        protected readonly IRepository<TEntity> _repository;
+        protected readonly IMapper _mapper;
 
         public CreateCommandService(IRepository<TEntity> repository, IMapper mapper)
         {
@@ -21,7 +21,7 @@ namespace ApplicationLogic.Generics.CommandServices
             _mapper = mapper  ?? throw new ArgumentException(nameof(mapper));
         }
 
-        public TEntityDto Create(TEntityDto entityDto)
+        public virtual TEntityDto Create(TEntityDto entityDto)
         {
             var mappedEntity = _mapper.Map<TEntity>(entityDto);
 

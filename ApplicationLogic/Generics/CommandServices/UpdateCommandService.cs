@@ -11,8 +11,8 @@ namespace ApplicationLogic.Generics.CommandServices
         where TEntity : class, IEntity
         where TEntityDto : class, IEntityDto
     {
-        private readonly IRepository<TEntity> _repository;
-        private readonly IMapper _mapper;
+        protected readonly IRepository<TEntity> _repository;
+        protected readonly IMapper _mapper;
 
         public UpdateCommandService(IRepository<TEntity> repository, IMapper mapper)
         {
@@ -21,7 +21,7 @@ namespace ApplicationLogic.Generics.CommandServices
         }
 
 
-        public TEntityDto Update(TEntityDto entityDto, string name)
+        public virtual TEntityDto Update(TEntityDto entityDto, string name)
         {
             var entity = _repository.Get(name);
 

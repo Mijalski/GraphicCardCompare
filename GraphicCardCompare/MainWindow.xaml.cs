@@ -1,5 +1,7 @@
 ﻿using System.Collections.Generic;
 using System.Collections.ObjectModel;
+using System.ComponentModel;
+using System.Runtime.CompilerServices;
 using System.Threading.Tasks;
 using System.Windows;
 using ApplicationLogic.Business.GraphicCards;
@@ -9,10 +11,11 @@ using ApplicationLogic.IGenerics.AppServices;
 using DomainLogic.Business.GraphicCards;
 using DomainLogic.Business.Specs;
 using DomainLogic.Business.Vendors;
+using Mijalski.GraphicCardCompare.Annotations;
 
 namespace Mijalski.GraphicCardCompare
 {
-    public partial class MainWindow : Window
+    public partial class MainWindow : Window, INotifyPropertyChanged
     {
         public List<GraphicCardDto> GraphicCardList { get; set; }
         public List<VendorDto> VendorList { get; set; }
@@ -28,6 +31,14 @@ namespace Mijalski.GraphicCardCompare
             DataContext = this;
             GraphicCardList = _graphicCardAppService.GetAll();
             VendorList = _vendorAppService.GetAll();
+        }
+
+        public event PropertyChangedEventHandler PropertyChanged;
+
+        [NotifyPropertyChangedInvocator]
+        protected virtual void OnPropertyChanged([CallerMemberName] string propertyName = null)
+        {
+            PropertyChanged?.Invoke(this, new PropertyChangedEventArgs(propertyName));
         }
     }
 }

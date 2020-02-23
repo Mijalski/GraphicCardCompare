@@ -9,12 +9,12 @@
     <Grid>
         <TabControl>
             <TabItem Header="Graphic Cards">
-                <DataGrid x:Name="GraphicCardDataGrid" ItemsSource="{Binding Path=GraphicCardList, Mode=TwoWay}" AlternatingRowBackground="LightBlue" AlternationCount="2"
+                <DataGrid x:Name="GraphicCardDataGrid" ItemsSource="{Binding Path=GraphicCardList, Mode=TwoWay, NotifyOnSourceUpdated=True, NotifyOnTargetUpdated=True}" AlternatingRowBackground="LightBlue" AlternationCount="2"
                           Margin="10,36,10,0" IsReadOnly="False"/>
             </TabItem>
             <TabItem Header="Vendors">
-                <DataGrid x:Name="VendorGrid" ItemsSource="{Binding Path=VendorList, Mode=OneWay}" AlternatingRowBackground="LightBlue" AlternationCount="2"
-                          Margin="10,36,10,0" IsReadOnly="True"/>
+                <DataGrid x:Name="VendorGrid" ItemsSource="{Binding Path=VendorList, Mode=OneWay, NotifyOnSourceUpdated=True, NotifyOnTargetUpdated=True}" AlternatingRowBackground="LightBlue" AlternationCount="2"
+                          Margin="10,36,10,0" IsReadOnly="False" CanUserDeleteRows="False"/>
             </TabItem>
         </TabControl>
     </Grid>

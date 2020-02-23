@@ -12,8 +12,8 @@ namespace ApplicationLogic.Generics.CommandServices
         where TEntity : class, IEntity
         where TEntityDto : class, IEntityDto
     {
-        private readonly IRepository<TEntity> _repository;
-        private readonly IMapper _mapper;
+        protected readonly IRepository<TEntity> _repository;
+        protected readonly IMapper _mapper;
 
         public DeleteCommandService(IRepository<TEntity> repository, IMapper mapper)
         {
@@ -22,7 +22,7 @@ namespace ApplicationLogic.Generics.CommandServices
         }
 
 
-        public void Delete(TEntityDto entityDto)
+        public virtual void Delete(TEntityDto entityDto)
         {
             var entity = _repository.Get(entityDto.Name);
 

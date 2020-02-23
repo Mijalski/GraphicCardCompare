@@ -4,6 +4,7 @@ using System.Linq;
 using System.Reflection;
 using System.Windows;
 using ApplicationLogic.Business.GraphicCards;
+using ApplicationLogic.Business.GraphicCards.CommandServices;
 using ApplicationLogic.Generics.AppServices;
 using ApplicationLogic.Generics.CommandServices;
 using ApplicationLogic.Generics.QueryServices;
@@ -56,6 +57,10 @@ namespace Mijalski.GraphicCardCompare
             services.AddScoped(typeof(IUpdateCommandService<,>), typeof(UpdateCommandService<,>));
             services.AddScoped(typeof(IDeleteCommandService<,>), typeof(DeleteCommandService<,>));
             services.AddScoped(typeof(IAppService<,>), typeof(AppService<,>));
+
+            // Override Graphic Card
+            services.AddScoped<ICreateCommandService<GraphicCard, GraphicCardDto>, GraphicCardCreateCommandService>();
+            services.AddScoped<IUpdateCommandService<GraphicCard, GraphicCardDto>, GraphicCardUpdateCommandService>();
 
             services.AddScoped<IAppService<GraphicCard, GraphicCardDto>, GraphicCardAppService>();
 
