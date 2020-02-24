@@ -20,15 +20,19 @@ namespace Mijalski.EntityFrameworkCore.Generics
         public TEntity Get(string name)
         {
             return _dbContext.Set<TEntity>()
-                .AsNoTracking()
                 .FirstOrDefault(e => e.Name == name);
         }
 
         public async Task<TEntity> GetAsync(string name)
         {
             return await _dbContext.Set<TEntity>()
-                .AsNoTracking()
                 .FirstOrDefaultAsync(e => e.Name == name);
+        }
+
+        public TEntity Get(Guid id)
+        {
+            return _dbContext.Set<TEntity>()
+                .FirstOrDefault(e => e.Id == id);
         }
 
         public IQueryable<TEntity> GetAll()

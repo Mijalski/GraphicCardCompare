@@ -1,4 +1,5 @@
-﻿using ApplicationLogic.Generics.CommandServices;
+﻿using System;
+using ApplicationLogic.Generics.CommandServices;
 using AutoMapper;
 using DomainLogic.Business.GraphicCards;
 using DomainLogic.Business.Vendors;
@@ -15,12 +16,12 @@ namespace ApplicationLogic.Business.GraphicCards.CommandServices
             _vendorRepository = vendorRepository;
         }
 
-        public override GraphicCardDto Update(GraphicCardDto entityDto, string name)
+        public override GraphicCardDto Update(GraphicCardDto entityDto, Guid id)
         {
-            var entity = _repository.Get(name);
+            var entity = _repository.Get(id);
             var vendor = _vendorRepository.Get(entityDto.VendorName);
 
-            _mapper.Map(entity, entityDto);
+            _mapper.Map(entityDto, entity);
             entity.Vendor = vendor;
 
             _repository.Update(entity);

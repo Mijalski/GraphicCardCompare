@@ -9,7 +9,7 @@ namespace ApplicationLogic.IGenerics.AppServices
         List<TEntityDto> GetAll();
         TEntityDto Get(string name);
         TEntityDto Create(TEntityDto createdEntityDto);
-        TEntityDto Update(TEntityDto createdEntityDto, string name);
+        TEntityDto Update(TEntityDto createdEntityDto, Guid id);
         void Delete(TEntityDto createdEntityDto);
     }
 }

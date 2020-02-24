@@ -5,6 +5,7 @@ namespace ApplicationLogic.Business.GraphicCards
 {
     public class GraphicCardDto : IEntityDto
     {
+        public Guid Id { get; set; }
         public string Name { get; set; }
         public decimal Price { get; set; }
         public int RamCapacity { get; set; }

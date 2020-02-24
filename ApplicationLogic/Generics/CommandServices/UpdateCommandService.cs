@@ -21,11 +21,11 @@ namespace ApplicationLogic.Generics.CommandServices
         }
 
 
-        public virtual TEntityDto Update(TEntityDto entityDto, string name)
+        public virtual TEntityDto Update(TEntityDto entityDto, Guid id)
         {
-            var entity = _repository.Get(name);
+            var entity = _repository.Get(id);
 
-            _mapper.Map(entity, entityDto);
+            _mapper.Map(entityDto, entity);
 
             _repository.Update(entity);
 

@@ -47,9 +47,9 @@ namespace ApplicationLogic.Generics.AppServices
             return _createCommandService.Create(createdEntityDto);
         }
 
-        public virtual TEntityDto Update(TEntityDto createdEntityDto, string name)
+        public virtual TEntityDto Update(TEntityDto createdEntityDto, Guid id)
         {
-            return _updateCommandService.Update(createdEntityDto, name);
+            return _updateCommandService.Update(createdEntityDto, id);
         }
 
         public virtual void Delete(TEntityDto createdEntityDto)

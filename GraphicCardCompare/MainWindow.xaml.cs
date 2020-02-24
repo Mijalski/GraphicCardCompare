@@ -38,12 +38,42 @@ namespace Mijalski.GraphicCardCompare
 
         private void GraphicCardList_EditEnding(object? sender, DataGridRowEditEndingEventArgs e)
         {
-            throw new System.NotImplementedException();
+            var graphicCardEditedDto = e.Row.DataContext as GraphicCardDto;
+
+            if (graphicCardEditedDto == null || e.EditAction != DataGridEditAction.Commit)
+                return;
+
+            if (VendorList.All(x => graphicCardEditedDto.VendorName != x.Name))
+            {
+                MessageBox.Show("Incorrect Vendor Name!", "Graphic Card Compare Error");
+                return;
+            }
+
+            if (e.Row.IsNewItem)
+            {
+                _graphicCardAppService.Create(graphicCardEditedDto);
+            }
+            else
+            {
+                _graphicCardAppService.Update(graphicCardEditedDto, graphicCardEditedDto.Id);
+            }
         }
 
         private void VendorList_EditEnding(object? sender, DataGridRowEditEndingEventArgs e)
         {
-            if(VendorList.Any(x => x.Name == e.))
+            var vendorEditedDto = e.Row.DataContext as VendorDto;
+
+            if (vendorEditedDto == null || e.EditAction != DataGridEditAction.Commit)
+                return;
+
+            if (e.Row.IsNewItem)
+            {
+                _vendorAppService.Create(vendorEditedDto);
+            }
+            else
+            {
+                _vendorAppService.Update(vendorEditedDto, vendorEditedDto.Id);
+            }
         }
     }
 }

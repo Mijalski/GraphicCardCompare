@@ -8,6 +8,7 @@ namespace Mijalski.EntityFrameworkCore.IGenerics
     {
         TEntity Get(string name);
         Task<TEntity> GetAsync(string name);
+        TEntity Get(Guid id);
         IQueryable<TEntity> GetAll();
         TEntity Create(TEntity entity);
         Task<TEntity> CreateAsync(TEntity entity);

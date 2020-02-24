@@ -1,4 +1,5 @@
-﻿using System.Threading.Tasks;
+﻿using System;
+using System.Threading.Tasks;
 using DomainLogic.Generics;
 using DomainLogic.IGenerics;
 
@@ -8,6 +9,6 @@ namespace ApplicationLogic.IGenerics.CommandServices
         where TEntity : class, IEntity
         where TEntityDto : class, IEntityDto
     {
-        TEntityDto Update(TEntityDto entityDto, string name);
+        TEntityDto Update(TEntityDto entityDto, Guid id);
     }
 }
