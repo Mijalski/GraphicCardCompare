@@ -10,7 +10,7 @@
         <TabControl>
             <TabItem Header="Graphic Cards">
                 <DataGrid x:Name="GraphicCardDataGrid" ItemsSource="{Binding Path=GraphicCardList, Mode=TwoWay, NotifyOnSourceUpdated=True, NotifyOnTargetUpdated=True}" AlternatingRowBackground="LightBlue" AlternationCount="2"
-                          Margin="10,36,10,0" IsReadOnly="False" AutoGenerateColumns="False" RowEditEnding="GraphicCardList_EditEnding">
+                          Margin="10,36,10,0" IsReadOnly="False" AutoGenerateColumns="False" CanUserDeleteRows="False" RowEditEnding="GraphicCardList_EditEnding">
                     <DataGrid.Columns>
                         <DataGridTextColumn Binding="{Binding Id}" IsReadOnly="True" Visibility="Hidden"/> <!-- binding column (CoolID) -->
                         <DataGridTextColumn Binding="{Binding Name, UpdateSourceTrigger=LostFocus}" Header="Name"/>
